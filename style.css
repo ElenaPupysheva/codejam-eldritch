@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+   .bg {
+    width: 100%;
+    position: absolute;
+    z-index:-1;
+    top:0;
+    bottom: 0;
+  }
+  .Ancients{
+    height: 316px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; 
+  }
+  .ancient {
+    width: 206px;
+    height: 277px;
+    box-shadow: 0px 6px 6px rgba(209, 96, 96, 0.767), 0px 2px 3px rgba(203, 223, 226, 0.16);
+    cursor: pointer;
+  }
+  /* .Ancients img:hover{
+   box-shadow: 0px 20px 20px rgba(8, 16, 124, 0.767), 0px 2px 3px rgba(203, 223, 226, 0.16);
+  } */
+  .difficulty {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between; 
+    width: 116px;
+  } 
+  .dif_b{
+    background-color: #ca7d50;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    width: 103px;
+    height: 41px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  }
+  .hover{
+    background-color: #75a6ad;
+    box-shadow: 0px 20px 20px rgba(189, 73, 218, 0.767), 0px 2px 3px rgba(203, 223, 226, 0.16);
+  }
+
+  .shuffle{
+    position: absolute;
+    color:aliceblue;
+    top:475px;
+    left:12px;
+    font-family:Red Hat Text;
+    font-size: 22px;
+    background-color: #994995;
+    width: 102px;
+    height: 58px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .current_state{
+    position: absolute;
+    top:325px;
+    left:180px;
+  }
+  .stage_text{
+    color:aliceblue;
+    font-family:Red Hat Text;
+    font-size: 18px;
+  }
+  .dots_container{
+    display: flex;
+    flex-direction: row;
+  }
+  .dot_green,
+  .dot_brown,
+  .dot_blue{
+    width: 40px; 
+    height: 40px;
+    background: #5489bb;
+    border-radius: 50%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 32px;
+  }
+  .dot_green{
+    background: #2b8847;
+  }
+  .dot_brown{
+    background: #8d5034;
+  }
+  .play_tab{
+    display: none;
+    position: absolute;
+    top:160px;
+    left:230px;
+    width: 1000px; 
+    height: 440px;
+    background: #5f2c82;  /* fallback for old browsers */
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 10px 10px 10px rgba(212, 68, 68, 0.877), 10px 10px 10px rgba(87, 4, 69, 0.16);
+  }
+  .deck{
+    position: absolute;
+    top:10px;
+    left:60px;
+    cursor: pointer;
+    display: block;
+  }
+  #results{
+  position: absolute;
+  top:10px;
+  right:60px;
+  background-size: cover;
+  height: 419px;
+  width: 285px;  
+ }
+
+.game{
+    display: none;
+    position: absolute;
+    top:160px;
+    left:428px;
+    height: 30px;
+    width: 135px;  
+    background-color: #5f2c82;
+    color: aliceblue;
+    font-family:Red Hat Text;
+    font-size: 22px;
+}
+.element_none {
+  display: block;
+}
+.element_show{
+  display: none;
+}

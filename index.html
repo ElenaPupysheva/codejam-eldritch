@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Aleo:regular,italic,700,700italic" rel="stylesheet">
+  <title>Codejam Eldritch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/favicon.png">
+</head>
+<body>
+    <div class="bg"><img src='./assets/bg.jpg' alt='картинка на обложке' style="width: 100%;">
+    </div>
+<main>
+<div class="Ancients">
+    <img id="Azatoth" class="ancient" src='./assets/Ancients/Azathoth.png' alt="Azathoth">
+    <img id="Cthulthu" class="ancient" src='./assets/Ancients/Cthulthu.png' alt="Cthulthu">
+    <img id="IogSothoth" class="ancient" src='./assets/Ancients/IogSothoth.png' alt="IogSothoth">
+    <img id="ShubNiggurath" class="ancient" src='./assets/Ancients/ShubNiggurath.png' alt="ShubNiggurath">
+</div>
+<div class="difficulty">
+    <button class="dif_b" param="1">Низкая</button>
+    <button class="dif_b" param="2">Средняя</button>
+    <button class="dif_b" param="3">Сложная</button>
+</div>
+<div class="deck_container">
+    <button id="shuffle" class="shuffle">Замешать колоду</button>
+
+<div class="current_state">
+    <div class="stage_container">
+        <span class="stage_text">Первая стадия</span>
+        <div class="dots_container">
+            <h1><div class="dot_green"><div id="green"></div></div></h1>
+            <h1><div class="dot_brown"><div id="brown"></div></div></h1>
+            <h1><div class="dot_blue"><div id="blue"></div></div></h1>
+        </div>
+    </div>
+    <div class="stage_container">
+        <span class="stage_text">Вторая стадия</span>
+        <div class="dots_container">
+            <h1><div class="dot_green"><div id="green_s"></div></div></h1>
+            <h1><div class="dot_brown"><div id="brown_s"></div></div></h1>
+            <h1><div class="dot_blue"><div id="blue_s"></div></div></h1>
+        </div>
+    </div>
+    <div class="stage_container">
+        <span class="stage_text">Третья стадия</span>
+        <div class="dots_container">
+            <h1><div class="dot_green"><div id="green_t"></div></div></h1>
+            <h1><div class="dot_brown"><div id="brown_t"></div></div></h1>
+            <h1><div class="dot_blue"><div id="blue_t"></div></div></h1>
+        </div>
+    </div>
+    <div class="play_tab">
+    <img class="deck" src='./assets/mythicCardBackground.png' alt="deck">
+    <div id="results" class="sh_card"></div>
+    <div class="game">GAME OVER</div>
+    </div>
+</div>
+</div>
+</main> 
+
+<script type="module" src="code.js"></script>
+<script type="module" src="total_mix.js"></script>
+
+</body>
+</html>
+<!-- style="background-image: url('./assets/MythicCards/blue/blue3.png');" -->
